@@ -23,14 +23,15 @@
         <option value="$PROJECT_DIR$/Assets/CameraRotation.cs" />
         <option value="$PROJECT_DIR$/Assets/script/CameraRotation.cs" />
         <option value="$PROJECT_DIR$/Assets/script/ExampleClass.cs" />
-        <option value="$PROJECT_DIR$/Assets/script/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/script/FireballCaster.cs" />
         <option value="$PROJECT_DIR$/Assets/script/bom.cs" />
         <option value="$PROJECT_DIR$/Assets/script/bomScript.cs" />
         <option value="$PROJECT_DIR$/Assets/script/EnemyHP.cs" />
         <option value="$PROJECT_DIR$/Assets/script/EnemyAI.cs" />
         <option value="$PROJECT_DIR$/Assets/script/Fireball.cs" />
         <option value="$PROJECT_DIR$/Assets/script/EnemyHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/script/BombIteme.cs" />
+        <option value="$PROJECT_DIR$/Assets/script/FireballCaster.cs" />
+        <option value="$PROJECT_DIR$/Assets/script/PlayerController.cs" />
       </list>
     </option>
   </component>
@@ -98,6 +99,8 @@
       <workItem from="1708605402185" duration="1307000" />
       <workItem from="1708607179295" duration="754000" />
       <workItem from="1708656130572" duration="1647000" />
+      <workItem from="1708830432368" duration="606000" />
+      <workItem from="1709122872872" duration="5315000" />
     </task>
     <servers />
   </component>

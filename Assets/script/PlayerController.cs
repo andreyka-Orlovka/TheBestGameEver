@@ -1,5 +1,4 @@
 
-using UnityEditor.Animations;
 using UnityEngine;
 
 
@@ -24,7 +23,6 @@ public class PlayerController : MonoBehaviour
     
     [SerializeField] private float speedBase;
     private float speed;
-
     private float timeSpeed;
     [SerializeField] private float timeSpeedMax; 
     [SerializeField] private float acceleration;

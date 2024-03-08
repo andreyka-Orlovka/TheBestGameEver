@@ -11,6 +11,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/script/PlayerHp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/script/FireballCaster.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/script/EnemyHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/JMO Assets/Welcome Screen/CFXR_WelcomeScreen.cs" root0="FORCE_HIGHLIGHTING" />
@@ -26,12 +27,14 @@
         <option value="$PROJECT_DIR$/Assets/script/bom.cs" />
         <option value="$PROJECT_DIR$/Assets/script/bomScript.cs" />
         <option value="$PROJECT_DIR$/Assets/script/EnemyHP.cs" />
-        <option value="$PROJECT_DIR$/Assets/script/EnemyAI.cs" />
         <option value="$PROJECT_DIR$/Assets/script/Fireball.cs" />
         <option value="$PROJECT_DIR$/Assets/script/EnemyHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/script/BombIteme.cs" />
-        <option value="$PROJECT_DIR$/Assets/script/FireballCaster.cs" />
         <option value="$PROJECT_DIR$/Assets/script/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/script/EnemyAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/script/FireballCaster.cs" />
+        <option value="$PROJECT_DIR$/Assets/script/PlayerHp.cs" />
+        <option value="$PROJECT_DIR$/Assets/script/ReloadOnEscape.cs" />
       </list>
     </option>
   </component>
@@ -101,6 +104,11 @@
       <workItem from="1708656130572" duration="1647000" />
       <workItem from="1708830432368" duration="606000" />
       <workItem from="1709122872872" duration="5315000" />
+      <workItem from="1709347575916" duration="1542000" />
+      <workItem from="1709365865524" duration="2332000" />
+      <workItem from="1709628836344" duration="1643000" />
+      <workItem from="1709794143016" duration="2872000" />
+      <workItem from="1709871808032" duration="7898000" />
     </task>
     <servers />
   </component>

@@ -51,6 +51,8 @@ public class PlayerController : MonoBehaviour
     
     private void Update()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         #region передвижение
         if (_characterController.isGrounded)
         {

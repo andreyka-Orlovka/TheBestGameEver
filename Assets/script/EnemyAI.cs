@@ -21,10 +21,11 @@ public class EnemyAI : MonoBehaviour
 
     [SerializeField] private float viewAngle;
 
-    [SerializeField] private int HP;
+    [SerializeField] private float HP;
 
-    [SerializeField] private int damagPlayer;
-    
+    [SerializeField] private float damage;
+    [SerializeField] private float damagBomb;
+
     private void Start()
     {
         InitComponentLinks();
@@ -48,6 +49,8 @@ public class EnemyAI : MonoBehaviour
         ChaseUpdate();
         
         PatrolUpdate();
+
+        AttackUpdate();
     }
     //взгляд игрока
     private  void NoticePlayerUpdate()
@@ -74,7 +77,7 @@ public class EnemyAI : MonoBehaviour
     {
         if (!_isPlayerNoticed)
         {
-            if (_navMeshAgent.remainingDistance == 0)
+            if (_navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)
             {
                 PickNewPatrolPoint();
             }
@@ -93,11 +96,23 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    private void AttackUpdate()
+    {
+        if (_isPlayerNoticed)
+        {
+            if (_navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)
+            {
+                player.GetComponent<PlayerHp>().DealDamag(damage * Time.deltaTime);
+            }
+        }
+    }
+
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name == "Bomb")
         {
-            HP = HP - damagPlayer;
+            HP = HP - damagBomb;
         }
     }
 }

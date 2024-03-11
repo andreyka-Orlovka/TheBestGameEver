@@ -11,10 +11,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/script/PlayerProgress.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/script/PlayerHp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/script/FireballCaster.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/script/EnemyHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/JMO Assets/Welcome Screen/CFXR_WelcomeScreen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/script/heart.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -27,14 +29,17 @@
         <option value="$PROJECT_DIR$/Assets/script/bom.cs" />
         <option value="$PROJECT_DIR$/Assets/script/bomScript.cs" />
         <option value="$PROJECT_DIR$/Assets/script/EnemyHP.cs" />
-        <option value="$PROJECT_DIR$/Assets/script/Fireball.cs" />
-        <option value="$PROJECT_DIR$/Assets/script/EnemyHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/script/BombIteme.cs" />
-        <option value="$PROJECT_DIR$/Assets/script/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/script/EnemyAI.cs" />
-        <option value="$PROJECT_DIR$/Assets/script/FireballCaster.cs" />
-        <option value="$PROJECT_DIR$/Assets/script/PlayerHp.cs" />
         <option value="$PROJECT_DIR$/Assets/script/ReloadOnEscape.cs" />
+        <option value="$PROJECT_DIR$/Assets/script/PlayerHp.cs" />
+        <option value="$PROJECT_DIR$/Assets/script/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/script/FireballCaster.cs" />
+        <option value="$PROJECT_DIR$/Assets/script/heart.cs" />
+        <option value="$PROJECT_DIR$/Assets/script/PlayerProgress.cs" />
+        <option value="$PROJECT_DIR$/Assets/script/EnemyAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/script/EnemyHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/script/PlayerHp1.cs" />
+        <option value="$PROJECT_DIR$/Assets/script/Fireball.cs" />
       </list>
     </option>
   </component>
@@ -108,7 +113,11 @@
       <workItem from="1709365865524" duration="2332000" />
       <workItem from="1709628836344" duration="1643000" />
       <workItem from="1709794143016" duration="2872000" />
-      <workItem from="1709871808032" duration="7898000" />
+      <workItem from="1709871808032" duration="15856000" />
+      <workItem from="1709954683490" duration="7648000" />
+      <workItem from="1710039817975" duration="653000" />
+      <workItem from="1710076671663" duration="806000" />
+      <workItem from="1710159720113" duration="382000" />
     </task>
     <servers />
   </component>

@@ -13,8 +13,8 @@ namespace script
         public GameObject bom;
 
         public float damage;
-        
-        
+
+        public EnemyHealth EnemyHealth;
         void Start()
         {
             
@@ -35,18 +35,6 @@ namespace script
             Instantiate(bom, gameObject.transform.position, Quaternion.identity);
             
             Destroy(gameObject);
-        }
-        private void OnCollisionEnter(Collision collision)
-        {
-            var EnemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
-            if (EnemyHealth != null)
-            {
-                EnemyHealth.value -= damage;
-                
-                DestroyFireball();
-            }
-            
-            
         }
     }
 }

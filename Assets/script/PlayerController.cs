@@ -18,8 +18,7 @@ public class PlayerController : MonoBehaviour
     
     [SerializeField] private float jumpForse;
 
-    [SerializeField] private int jump;
-    private int _jump1;
+    [SerializeField] private bool jump;
     
     [SerializeField] private float speedBase;
     private float speed;
@@ -56,17 +55,17 @@ public class PlayerController : MonoBehaviour
         #region передвижение
         if (_characterController.isGrounded)
         {
-            _jump1 = jump;
+            jump = true;
 
             _fallVelocity = 0;
         }
 
         //прыжок
-        if (Input.GetKeyDown(KeyCode.Space) && _jump1 > 0)
+        if (Input.GetKeyDown(KeyCode.Space) && jump)
         {
             _fallVelocity = -jumpForse;
 
-            _jump1 -= 1;
+            jump = false;
         }
 
 

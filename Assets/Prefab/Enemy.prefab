@@ -73,8 +73,10 @@ MonoBehaviour:
   patrolPoints: []
   player: {fileID: 2140329392042380878, guid: b29cdba8228c14041b487fa93d016292, type: 3}
   viewAngle: 90
-  HP: 10
-  damagPlayer: 30
+  HP: 100
+  PlayerProgress: {fileID: 0}
+  damage: 30
+  damagBomb: 20
 --- !u!136 &2634035540564511255
 CapsuleCollider:
   m_ObjectHideFlags: 0

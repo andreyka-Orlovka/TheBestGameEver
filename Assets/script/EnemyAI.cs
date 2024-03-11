@@ -21,11 +21,13 @@ public class EnemyAI : MonoBehaviour
 
     [SerializeField] private float viewAngle;
 
-    [SerializeField] private float HP;
+    public float HP;
+
+    public PlayerProgress PlayerProgress;
 
     [SerializeField] private float damage;
     [SerializeField] private float damagBomb;
-
+    
     private void Start()
     {
         InitComponentLinks();
@@ -104,15 +106,6 @@ public class EnemyAI : MonoBehaviour
             {
                 player.GetComponent<PlayerHp>().DealDamag(damage * Time.deltaTime);
             }
-        }
-    }
-
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.name == "Bomb")
-        {
-            HP = HP - damagBomb;
         }
     }
 }

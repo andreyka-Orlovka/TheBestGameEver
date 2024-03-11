@@ -1,11 +1,14 @@
 using System;
 using UnityEngine;
-public class EnemyHealth : MonoBehaviour
+public abstract class EnemyHealth : MonoBehaviour
 {
     public float value;
 
-    private void Update()
+    public PlayerProgress playerProgress;
+
+    public void DealDamage(float damage)
     {
+        playerProgress.AddExperience(damage);
         if (value <= 0)
         {
             Destroy(gameObject);

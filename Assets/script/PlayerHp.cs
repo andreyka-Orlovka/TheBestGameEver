@@ -42,4 +42,11 @@ public class PlayerHp : MonoBehaviour
     {
         valueRectTransform.anchorMax = new Vector2(playerHp/_maxValue,1);
     }
+
+    public void AddHealth(float amount)
+    {
+        playerHp += amount;
+        playerHp = Mathf.Clamp(playerHp, 0, _maxValue);
+        DrawHealthBar();
+    }
 }

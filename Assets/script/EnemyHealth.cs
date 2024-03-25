@@ -1,17 +1,20 @@
-using System;
 using UnityEngine;
-public abstract class EnemyHealth : MonoBehaviour
+
+namespace script
 {
-    public float value;
-
-    public PlayerProgress playerProgress;
-
-    public void DealDamage(float damage)
+    public abstract class EnemyHealth : MonoBehaviour
     {
-        playerProgress.AddExperience(damage);
-        if (value <= 0)
+        public float value;
+
+        public PlayerProgress playerProgress;
+
+        public void DealDamage(float damage)
         {
-            Destroy(gameObject);
+            playerProgress.AddExperience(damage);
+            if (value <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

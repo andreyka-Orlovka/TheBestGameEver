@@ -1,6 +1,7 @@
 
 using System;
 using System.Collections.Generic;
+using script.игрок;
 using UnityEngine.AI;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -23,10 +24,10 @@ public class EnemyAI : MonoBehaviour
 
     public float HP;
 
-    public PlayerProgress PlayerProgress;
+    private PlayerProgress _playerProgress;
 
     [SerializeField] private float damage;
-    [SerializeField] private float damagBomb;
+    
     
     private void Start()
     {
@@ -34,6 +35,10 @@ public class EnemyAI : MonoBehaviour
         PickNewPatrolPoint();
         
         anim = GetComponentInChildren<Animator>();
+
+        _playerProgress = FindObjectOfType<PlayerProgress>(true);
+        player = FindObjectOfType<PlayerController>(true);
+
     }
     private void InitComponentLinks()
     {
@@ -41,18 +46,23 @@ public class EnemyAI : MonoBehaviour
     }
     private void Update()
     {
+        PatrolUpdate();
+
+        if (!player)
+        {
+            return;
+        }
+
+        NoticePlayerUpdate();
+        
+        ChaseUpdate();
+        
+        AttackUpdate();
+        
         if (0 >= HP)
         {
             Destroy(gameObject);
         }
-        
-        NoticePlayerUpdate();
-
-        ChaseUpdate();
-        
-        PatrolUpdate();
-
-        AttackUpdate();
     }
     //взгляд игрока
     private  void NoticePlayerUpdate()
@@ -107,5 +117,10 @@ public class EnemyAI : MonoBehaviour
                 player.GetComponent<PlayerHp>().DealDamag(damage * Time.deltaTime);
             }
         }
+    }
+    public void Damage(float damage)
+    {
+        _playerProgress.AddExperience(damage);
+        HP -= damage;
     }
 }

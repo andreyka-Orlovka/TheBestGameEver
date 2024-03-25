@@ -1,10 +1,13 @@
 using System;
+using System.Collections.Generic;
 using TMPro;
 
 using UnityEngine;
 
 public class PlayerProgress : MonoBehaviour
 {
+    public List<PlayerProgressLevel> ListProgress;
+    
     public RectTransform experienceValueRectTransform;
     
     private int _levelValue = 1;

@@ -12,15 +12,11 @@ namespace script
 
         public GameObject bom;
 
-        public float damage;
-
-        public EnemyHealth EnemyHealth;
+        public float damageBomb;
+        
         void Start()
         {
-            
-
             Invoke("DestroyFireball" , lifetime);
-            Invoke("Bom" , lifetime);
         }
         private void FixedUpdate()
         {
@@ -35,6 +31,16 @@ namespace script
             Instantiate(bom, gameObject.transform.position, Quaternion.identity);
             
             Destroy(gameObject);
+        }
+
+        private void OnCollisionEnter(Collision other)
+        {
+            if (other.transform.root.TryGetComponent(out EnemyAI enemyAI))
+            {
+                enemyAI.Damage(damageBomb);
+                                
+                DestroyFireball();
+            }
         }
     }
 }

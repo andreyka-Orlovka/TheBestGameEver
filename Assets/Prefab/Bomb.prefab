@@ -231,7 +231,7 @@ MonoBehaviour:
   speed: 20
   lifetime: 1
   bom: {fileID: 1134129239631916, guid: 7e48ba6b1b968764490bbc70b66e3fe1, type: 3}
-  damage: 2.5
+  damageBomb: 20
 --- !u!54 &5071764109187065679
 Rigidbody:
   m_ObjectHideFlags: 0

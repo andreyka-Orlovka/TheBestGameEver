@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6347819363878522392}
   - component: {fileID: 5132262051614017053}
   - component: {fileID: 2634035540564511255}
-  - component: {fileID: 2521269717821961467}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -70,13 +69,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0291c8919c9f25488012f4dc32748f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolPoints: []
+  patrolPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   player: {fileID: 2140329392042380878, guid: b29cdba8228c14041b487fa93d016292, type: 3}
   viewAngle: 90
   HP: 100
-  PlayerProgress: {fileID: 0}
+  playerProgress: {fileID: 246657479419323736, guid: b29cdba8228c14041b487fa93d016292, type: 3}
   damage: 30
-  damagBomb: 20
 --- !u!136 &2634035540564511255
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -100,19 +101,6 @@ CapsuleCollider:
   m_Height: 3
   m_Direction: 1
   m_Center: {x: 0, y: 1.5, z: 0}
---- !u!114 &2521269717821961467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5377762886857385953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6e5d52e3abaefa4fa6040eaf1fac0d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value: 5
 --- !u!1001 &1792838069470890019
 PrefabInstance:
   m_ObjectHideFlags: 0

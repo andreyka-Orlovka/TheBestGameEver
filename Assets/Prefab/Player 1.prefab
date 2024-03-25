@@ -466,6 +466,7 @@ Transform:
   m_Children:
   - {fileID: 5181979744339547428}
   - {fileID: 56915582913252201}
+  - {fileID: 239303384675351385}
   m_Father: {fileID: 8740367885210318269}
   m_LocalEulerAnglesHint: {x: 0, y: 0.544, z: -0.227}
 --- !u!1 &2963256777504999446
@@ -830,7 +831,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1
+  m_text: 40
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -914,6 +915,7 @@ GameObject:
   - component: {fileID: 4403106718435376373}
   - component: {fileID: 6240166459151946550}
   - component: {fileID: 246657479419323736}
+  - component: {fileID: 6860301119748072097}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Untagged
@@ -1041,8 +1043,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dba13099b384da41842d76a0b4f89b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ListProgress:
+  - ForTheNextLevel: 0
+    GrenadeDamage: 0
+    FireballDamage: 0
+  - ForTheNextLevel: 0
+    GrenadeDamage: 0
+    FireballDamage: 0
+  - ForTheNextLevel: 0
+    GrenadeDamage: 0
+    FireballDamage: 0
+  - ForTheNextLevel: 0
+    GrenadeDamage: 0
+    FireballDamage: 0
+  - ForTheNextLevel: 0
+    GrenadeDamage: 0
+    FireballDamage: 0
+  - ForTheNextLevel: 0
+    GrenadeDamage: 0
+    FireballDamage: 0
+  - ForTheNextLevel: 0
+    GrenadeDamage: 0
+    FireballDamage: 0
+  - ForTheNextLevel: 0
+    GrenadeDamage: 0
+    FireballDamage: 0
+  - ForTheNextLevel: 0
+    GrenadeDamage: 0
+    FireballDamage: 0
+  - ForTheNextLevel: 0
+    GrenadeDamage: 0
+    FireballDamage: 0
   experienceValueRectTransform: {fileID: 6858944245273509959}
   levelValueTMP: {fileID: 1396396657104630803}
+--- !u!114 &6860301119748072097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6315350293682647523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c07351247aa18349961943a09d50b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grenade: {fileID: 2165519429133029908, guid: 5e287f359423fc5478a3ed90107f5603, type: 3}
+  GrenadeTransform: {fileID: 239303384675351385}
+  force: 500
 --- !u!1 &6492818424939630231
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,6 +1320,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99ee1b907ef5abe44b694cb089fd6e85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &7859528699377446817
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 239303384675351385}
+  m_Layer: 0
+  m_Name: granede
+  m_TagString: Untagged
+  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &239303384675351385
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7859528699377446817}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.53729963, y: 0, z: 0, w: 0.8433914}
+  m_LocalPosition: {x: 0, y: 1.6170001, z: 1.49}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8182540571768895815}
+  m_LocalEulerAnglesHint: {x: -65, y: 0, z: 0}
 --- !u!1 &8247347577965127510
 GameObject:
   m_ObjectHideFlags: 0
@@ -1305,7 +1384,7 @@ RectTransform:
   m_Father: {fileID: 6469167917982625678}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0.099998474, y: -0.0044822693}
   m_SizeDelta: {x: -7.0000305, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

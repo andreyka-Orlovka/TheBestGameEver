@@ -27,10 +27,15 @@ public class PlayerProgress : MonoBehaviour
         _experienceCurrentValue += value;
         if (_experienceCurrentValue >= _experienceTargetValue)
         {
-            _levelValue += 1;
+            AddLevelValue(_levelValue + 1);
             _experienceCurrentValue = 0;
         }
         DrawUI();
+    }
+
+    public void AddLevelValue(int value)
+    {
+        _levelValue = value;
     }
 
     public void DrawUI()

@@ -11,13 +11,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/script/EnemyHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/script/granad/GrenadeCaster.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/script/granad/grenade.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/script/granad/Explosion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/script/игрок/Progras/PlayerProgressLevel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/script/heart.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/JMO Assets/Welcome Screen/CFXR_WelcomeScreen.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/script/EnemyHealth.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/script/granad/GrenadeCaster.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -43,12 +42,13 @@
         <option value="$PROJECT_DIR$/Assets/script/игрок/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/script/EnemyHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/script/bomb/Fireball.cs" />
-        <option value="$PROJECT_DIR$/Assets/script/EnemyAI.cs" />
-        <option value="$PROJECT_DIR$/Assets/script/игрок/Progras/PlayerProgress.cs" />
         <option value="$PROJECT_DIR$/Assets/script/игрок/Progras/PlayerProgressLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/script/granad/GrenadeCaster.cs" />
         <option value="$PROJECT_DIR$/Assets/script/granad/Explosion.cs" />
         <option value="$PROJECT_DIR$/Assets/script/granad/grenade.cs" />
+        <option value="$PROJECT_DIR$/Assets/script/игрок/Progras/PlayerProgress.cs" />
+        <option value="$PROJECT_DIR$/Assets/script/EnemyAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/script/door.cs" />
       </list>
     </option>
   </component>
@@ -132,7 +132,12 @@
       <workItem from="1710854069887" duration="700000" />
       <workItem from="1711112752534" duration="589000" />
       <workItem from="1711285712126" duration="4932000" />
-      <workItem from="1711366824694" duration="6950000" />
+      <workItem from="1711366824694" duration="7544000" />
+      <workItem from="1711414261489" duration="564000" />
+      <workItem from="1711419107093" duration="1351000" />
+      <workItem from="1711459680413" duration="1899000" />
+      <workItem from="1711543219333" duration="582000" />
+      <workItem from="1711626832186" duration="3310000" />
     </task>
     <servers />
   </component>

@@ -120,7 +120,10 @@ public class EnemyAI : MonoBehaviour
     }
     public void Damage(float damage)
     {
-        _playerProgress.AddExperience(damage);
+        if (_playerProgress != null)
+        {
+            _playerProgress.AddExperience(damage);
+        }
         HP -= damage;
     }
 }
